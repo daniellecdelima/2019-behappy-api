@@ -9,7 +9,7 @@ const init = async () => {
   await server.register({
     plugin: require("hapi-router"),
     options: {
-      routes: "src/routes/**/*.js"
+      routes: "src/routes/tasks/*.js"
     }
   });
 
