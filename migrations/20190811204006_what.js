@@ -7,8 +7,8 @@ exports.up = function(knex, Promise) {
           table.integer('image_index').nullable();
           table.timestamps();
     });
-};
-
-exports.down = function(knex, Promise) {
+  };
+  
+  exports.down = function(knex, Promise) {
     return knex.schema.dropTable(table_name);
 };
